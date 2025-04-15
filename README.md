@@ -1,37 +1,33 @@
-# LotteryNumbers
+# 🎲 LotteryNumbers
 **Author:** Pegah Khodakarami
 
-This C# console application was created as part of Dubber's technical challenge. It simulates a lottery number generator.
+This C# console application generates 6 unique random lottery numbers between 1 and 49, sorts them in ascending order, assigns background colours based on number ranges, and includes a bonus ball. The application was developed as part of a coding challenge.
 
-## ✅ Features
+
+### ✅ Features
 - Generates 6 unique random numbers between 1 and 49
-- Sorts and displays the numbers in numerical order
+- Sorts numbers in ascending order
 - Adds a bonus ball, which is also unique and drawn after the original 6 numbers
-- Applies colour-coded output based on number ranges:
+- Assigns background colours:
   1–9: Grey
   10–19: Blue
-  20–29: Pink (Magenta)
+  20–29: Pink
   30–39: Green
   40–49: Yellow
+- Generates a unique bonus ball
+- Optional interactive version for user-defined number generation
 
-**Note:** I also put another file named "InteractiveVersion.cs" which is commented. This code accepts user input for how many random numbers to generate which is more realistic in the real world.It also supports multiple draws in a loop until the user enters 0.
+### 📁 Project Structure
+- `Program.cs`: Main application entry point
+- `LotteryGenerator.cs`: Contains methods for number generation and display
+- `InteractiveVersion.cs`: Optional interactive version (commented out to avoid compilation issues)
 
-## 💡 Design Decisions
-- Top-level statements used for a modern C# feel
-- Logic separated into a static utility class to enhance modularity and reusability
+### 🚀 How to Run
+1- Clone the repository
+2- Open the solution in Visual Studio
+3- Build and run the project
 
-## 🕒 Time Spent
-Approximately 1.5 to 2 hours, including testing, refactoring, and implementing extra features.
-
-## 🚀 How to Run
-1- Open the project in Visual Studio or VS Code
-2- Build and run the project
-3- For interactive version, enter how many random numbers you'd like to generate (between 1 and 49)
-4- View your numbers, bonus ball, and repeat or exit as needed
-
-📸 Sample Output
-Enter number of random integers (or 0 to quit): 6
-Your lottery numbers are:
-Main numbers: 8 12 19 27 35 42 
-Bonus Ball: 10
+To explore the interactive version:
+1- Uncomment the code in InteractiveVersion.cs.
+2- Comment out the code in Program.cs to avoid conflicts with top-level statements.
 
